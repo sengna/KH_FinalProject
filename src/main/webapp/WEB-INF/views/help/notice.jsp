@@ -109,7 +109,7 @@
 			                        <tr>
 			                            <td>${NoticeVO.no}</td>
 			                            <td><a href="/help/get?no=${NoticeVO.no}">${NoticeVO.title}</a></td>
-			                            <td>${NoticeVO.reg_date}</td>
+			                            <td><fmt:formatDate pattern="yyyy/MM/dd" value="${NoticeVO.reg_date}"/></td>
 			                        </tr>       
 			                    </c:forEach>    
 			                </tbody>
